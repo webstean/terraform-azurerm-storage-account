@@ -43,7 +43,7 @@ module "application-landing-zone" {
 
 }
 
-module "webstean-terraform-azurerm-storage-account" {
+module "storage" {
   source  = "webstean/storage-account/azurerm"
   version = "~>0.0, < 1.0"
 
