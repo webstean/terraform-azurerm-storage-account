@@ -6,11 +6,11 @@ terraform {
   required_version = "~>1.0, < 2.0"
 
   required_providers {
-    alz = {
-      ## Azure Landing Zones (ALZ) - generate data to allow you to simplify provisioning of your ALZ configuration.
-      source  = "Azure/alz"
-      version = "~>0.0, < 1.0"
-    }
+#    alz = {
+#      ## Azure Landing Zones (ALZ) - generate data to allow you to simplify provisioning of your ALZ configuration.
+#      source  = "Azure/alz"
+#      version = "~>0.0, < 1.0"
+#    }
     azurerm = {
       ## Azure resource provider
       source  = "hashicorp/azurerm"
@@ -130,12 +130,12 @@ provider "azapi" {
   enable_preflight          = true
 }
 
-provider "alz" {
-  ## Configuration options
-  use_oidc = true
-  use_msi  = false
-  use_cli  = false
-}
+#provider "alz" {
+#  ## Configuration options
+#  use_oidc = true
+#  use_msi  = false
+#  use_cli  = false
+#}
 
 #provider "github" {
 #  alias = "organization" // provider = github.organization
@@ -151,16 +151,16 @@ provider "alz" {
 #  token = var.git_personal_sec
 #}
 
-provider "powerplatform" {
-  use_oidc = true
-}
+#provider "powerplatform" {
+#  use_oidc = true
+#}
 
 provider "random" {
   ## Configuration options
 }
 
-provider "tls" {
-  ## Configuration options
-}
+#provider "tls" {
+#  ## Configuration options
+#}
 
 provider "local" {}
