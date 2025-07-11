@@ -109,6 +109,15 @@ provider "azuread" {
   use_cli                   = true
 }
 
+provider "azapi" {
+  ## Configuration options
+  use_oidc                  = true
+  use_aks_workload_identity = false
+  use_msi                   = false
+  use_cli                   = false
+  enable_preflight          = true
+}
+
 #provider "azuredevops" {
 #  # Configuration options
 #  #org_service_url = "https://dev.azure.com/my-org"
@@ -120,15 +129,6 @@ provider "azuread" {
 #  // don't use staging endpoint, as it obviously won't work with AKV
 #  server_url = "https://acme-v02.api.letsencrypt.org/directory"
 #}
-
-provider "azapi" {
-  ## Configuration options
-  use_oidc                  = true
-  use_aks_workload_identity = false
-  use_msi                   = false
-  use_cli                   = false
-  enable_preflight          = true
-}
 
 #provider "alz" {
 #  ## Configuration options
@@ -155,12 +155,13 @@ provider "azapi" {
 #  use_oidc = true
 #}
 
-provider "random" {
-  ## Configuration options
-}
+#provider "random" {
+#  ## Configuration options
+#}
 
 #provider "tls" {
 #  ## Configuration options
 #}
 
-provider "local" {}
+#provider "random" {}
+#provider "local" {}
