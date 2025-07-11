@@ -98,7 +98,7 @@ provider "azurerm" {
   use_oidc                  = true
   use_aks_workload_identity = false
   use_msi                   = false
-  use_cli                   = false
+  use_cli                   = true
 }
 
 # Configure the Microsoft Azure Provider
@@ -106,20 +106,20 @@ provider "azuread" {
   use_oidc                  = true
   use_aks_workload_identity = false
   use_msi                   = false
-  use_cli                   = false
+  use_cli                   = true
 }
 
-provider "azuredevops" {
-  # Configuration options
-  #org_service_url = "https://dev.azure.com/my-org"
-  #use_oidc        = true
-}
+#provider "azuredevops" {
+#  # Configuration options
+#  #org_service_url = "https://dev.azure.com/my-org"
+#  #use_oidc        = true
+#}
 
-provider "acme" {
-  ## Configuration options
-  // don't use staging endpoint, as it obviously won't work with AKV
-  server_url = "https://acme-v02.api.letsencrypt.org/directory"
-}
+#provider "acme" {
+#  ## Configuration options
+#  // don't use staging endpoint, as it obviously won't work with AKV
+#  server_url = "https://acme-v02.api.letsencrypt.org/directory"
+#}
 
 provider "azapi" {
   ## Configuration options
