@@ -5,10 +5,10 @@ data "azurerm_resource_group" "this" {
 }
 
 data "azuread_group" "this" {
-  id = var.entra_group_id
+  object_id = var.entra_group_id
 }
 data "azuread_service_principal" "entra_group_id" {
-  display_name = azuread_group.this.display_name
+  display_name = data.azuread_group.this.display_name
 }
 
 /*
