@@ -5,7 +5,7 @@ data "azurerm_subscriptions" "current" {}
 ## azuread
 data "azuread_client_config" "current" {}
 ## azapi
-data "azapi_client_config" "current" {}
+#data "azapi_client_config" "current" {}
 
 /*
 locals {
