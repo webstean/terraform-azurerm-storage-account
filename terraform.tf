@@ -21,12 +21,12 @@ terraform {
       source  = "hashicorp/azuread"
       version = "~> 3.0, < 4.0"
     }
-    azapi = {
-      ## Azure API Provider - for Azure resources that are not directly support by neither 
-      ## the azurerm nor azuread providers
-      source  = "azure/azapi"
-      version = "~> 2.0, < 3.0"
-    }
+#    azapi = {
+#      ## Azure API Provider - for Azure resources that are not directly support by neither 
+#      ## the azurerm nor azuread providers
+#      source  = "azure/azapi"
+#      version = "~> 2.0, < 3.0"
+#    }
 #    github = {
 #      ## GitHub provider
 #      source  = "integrations/github"
@@ -109,15 +109,15 @@ provider "azuread" {
   use_cli                   = true
 }
 
-provider "azapi" {
-  ## Configuration options
-  subscription_id                 = var.subscription_id
-  use_oidc                  = true
-  use_aks_workload_identity = false
-  use_msi                   = false
-  use_cli                   = true
-  enable_preflight          = true
-}
+#provider "azapi" {
+#  ## Configuration options
+#  subscription_id                 = var.subscription_id
+#  use_oidc                  = true
+#  use_aks_workload_identity = false
+#  use_msi                   = false
+#  use_cli                   = true
+#  enable_preflight          = true
+#}
 
 #provider "azuredevops" {
 #  # Configuration options
