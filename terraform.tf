@@ -103,7 +103,6 @@ provider "azurerm" {
 
 # Configure the Microsoft Azure Provider
 provider "azuread" {
-  subscription_id                 = var.subscription_id
   use_oidc                  = true
   use_aks_workload_identity = false
   use_msi                   = false
@@ -116,7 +115,7 @@ provider "azapi" {
   use_oidc                  = true
   use_aks_workload_identity = false
   use_msi                   = false
-  use_cli                   = false
+  use_cli                   = true
   enable_preflight          = true
 }
 
