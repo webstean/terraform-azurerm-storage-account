@@ -30,6 +30,9 @@ data "azurerm_role_definition" "owner" {
 data "azurerm_role_definition" "contributor" {
   name = "Contributor"
 }
+data "azurerm_role_definition" "reader" {
+  name = "Reader"
+}
 data "azurerm_role_definition" "reader_and_access" {
   name = "Reader and Data Access"
 }
