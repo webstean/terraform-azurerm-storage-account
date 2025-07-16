@@ -1,9 +1,11 @@
 # Andrew's Terraform module for creating an Azure Storage Account
 Support the creation blob, files, sftp and other types of storage accounts
 
-[GitHub Repository - https://github.com/webstean/terraform-azurerm-storage-account](https://github.com/webstean/terraform-azurerm-storage-account)
-[Terraform Registry for this module](https://registry.terraform.io/modules/webstean/terraform-azurerm-storage-account/azurerm/latest)
-[Terraform Registry Home - other modules](https://registry.terraform.io/namespaces/webstean)
+[GitHub Repository](https://github.com/webstean/terraform-azurerm-storage-account)
+
+[Terraform Registry for this module](https://github.com/webstean/terraform-azurerm-storage-account)
+
+[Terraform Registry Home - my other modules](https://registry.terraform.io/namespaces/webstean)
 
 
 This module is intended to be an **example** of how you can use Terraform Azure modules in a enterprise like environment.
@@ -73,3 +75,4 @@ module "storage" {
 
 }
 ```
+---
