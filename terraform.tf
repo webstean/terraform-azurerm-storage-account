@@ -21,6 +21,11 @@ terraform {
       source  = "hashicorp/azuread"
       version = "~> 3.0, < 4.0"
     }
+#    msgraph = {
+#      ## Microsoft Graph - replacement for azuread
+#      version = "~> 0.0, < 1.0"
+#      source  = "Microsoft/msgraph"
+#    }
 #    azapi = {
 #      ## Azure API Provider - for Azure resources that are not directly support by neither 
 #      ## the azurerm nor azuread providers
@@ -166,3 +171,13 @@ provider "azuread" {
 
 #provider "random" {}
 #provider "local" {}
+
+#provider "msgraph" {
+  # More information on the authentication methods supported by
+  # the MSGraph Provider can be found here:
+  # https://registry.terraform.io/providers/Microsoft/msgraph/latest/docs
+
+  # client_id       = "..."
+  # client_secret   = "..."
+  # tenant_id       = "..."
+}
