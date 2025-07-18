@@ -89,7 +89,7 @@ module "storage" {
 ---
 ## License
 
-Distributed under the Mozilla Public License Version 2.0 License. See [LICENSE](./LICENSE.md) for more information.
+Distributed under the Mozilla Public License Version 2.0 License. See [LICENSE](./LICENSE) for more information.
 
 <!-- markdownlint-disable MD033 -->
 ## Requirements
@@ -118,6 +118,7 @@ Distributed under the Mozilla Public License Version 2.0 License. See [LICENSE](
 | [azuread_domains.root](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/data-sources/domains) | data source |
 | [azuread_domains.unmanaged](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/data-sources/domains) | data source |
 | [azuread_group.this](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/data-sources/group) | data source |
+| [azuread_managed_identity.this](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/data-sources/managed_identity) | data source |
 | [azuread_service_principal.existing-apim](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/data-sources/service_principal) | data source |
 | [azuread_service_principal.existing-dynamicserp](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/data-sources/service_principal) | data source |
 | [azuread_service_principal.msgraph](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/data-sources/service_principal) | data source |
