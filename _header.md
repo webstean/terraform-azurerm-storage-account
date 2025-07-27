@@ -61,6 +61,7 @@ module "storage" {
   version = "~>0.0, < 1.0"
 
   ## identity
+  entra_group_unified_id         = module.application_landing_zone.entra_group_unified_id         ## services/applications
   entra_group_pag_id             = module.application_landing_zone.entra_group_pag_id             ## services/applications
   user_assigned_identity_name    = module.application_landing_zone.user_assigned_identity_name    ## humans/admin users
   
